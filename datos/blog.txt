@@ -1,0 +1,5 @@
+Título: PHP desde cero | Autor: Juan Pérez
+Título: Leer archivos con PHP | Autor: Laura Gómez
+Título: Uso de funciones en PHP | Autor: Pedro Ruiz
+Título: Herencia y clases en PHP | Autor: Marta Sánchez
+Título: Formularios y $_POST en PHP | Autor: Daniel Torres

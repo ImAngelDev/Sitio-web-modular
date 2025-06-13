@@ -1,0 +1,116 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para html y body para que ocupen toda la altura */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hacemos que el body sea flex column para footer abajo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Layout principal: contenedor con sidebar y main */
+.contenedor-principal {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px 20px;
+    flex: 1; /* para que crezca y empuje footer abajo */
+}
+
+/* Barra lateral (sidebar) */
+aside {
+    flex: 0 0 250px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Navegación */
+nav {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #999;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+}
+
+/* Estilos para párrafos dentro de main */
+main p {
+    margin-bottom: 1em;
+}
+
+/* Estilos para listas */
+ul {
+    list-style: disc inside;
+    margin-bottom: 1em;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column;
+        padding: 0 10px 10px;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

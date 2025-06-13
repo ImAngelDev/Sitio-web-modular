@@ -1,0 +1,3 @@
+Bienvenido a mi primer sitio web con PHP.
+Esta página ha sido construida usando una estructura modular.
+El contenido que estás leyendo ha sido cargado dinámicamente desde un archivo de texto.
